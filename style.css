@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "JetBrains Mono", monospace;
+    color: #FDFFFD;
+}
+
+::placeholder{
+    color: #393A40;
+}
+
+body{
+    background-color: #0F0F16;
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header{
+    background-color: #0C0C12;
+    height: 100px;
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: #1D1D25 2px solid;
+}
+
+.title{
+    height: 40px;
+    width: 100dvw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    margin: 50px;
+    font-size: 1.25rem;
+}
+
+.search{
+    background-color: #0C0C12;
+    height: 40px;
+    width: 300px;
+    border: #1D1D25 2px solid;
+    border-radius: 10px;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search input{
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    width: 300px;
+    margin: 10px;
+}
+
+.search input:focus{
+    border: none;
+    outline: none;
+}
+
+.menu{
+    background-color: #0C0C12;
+    height: 40px;
+    width: 100dvw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu button{
+    background-color: transparent;
+    border: #1D1D25 1px solid;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    padding: 25px;
+    padding-bottom: 7.5px;
+    padding-top: 7.5px;
+    margin-left: 50px;
+}
+
+.menu button:hover{
+    background-color: #12121A;
+}
