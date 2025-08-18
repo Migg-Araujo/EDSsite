@@ -1,16 +1,25 @@
-*{
+:root {
+    --color1: #FDFFFD;        /* Main text color */
+    --color2: #393A40;        /* Placeholder color */
+    --color3: #0F0F16;        /* Body background */
+    --color4: #0C0C12;        /* Header background */
+    --color5: #1D1D25;        /* Border color */
+    --color6: #12121A;        /* Hover backgrounds */
+}
+
+* {
     margin: 0;
     padding: 0;
     font-family: "JetBrains Mono", monospace;
-    color: #FDFFFD;
+    color: var(--color1);
 }
 
-::placeholder{
-    color: #393A40;
+::placeholder {
+    color: var(--color2);
 }
 
-body{
-    background-color: #0F0F16;
+body {
+    background-color: var(--color3);
     height: 100dvh;
     width: 100dvw;
     display: flex;
@@ -19,23 +28,23 @@ body{
     justify-content: flex-start;
 }
 
-header{
-    background-color: #0C0C12;
+header {
+    background-color: var(--color4);
     height: 75px;
     width: 100dvw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border-bottom: #1D1D25 2px solid;
+    border-bottom: var(--color5) 2px solid;
 }
 
-header h1{
+header h1 {
     margin: 50px;
     font-size: 1.25rem;
 }
 
-.menu{
+.menu {
     margin: 50px;
     height: 75px;
     width: 50dvw;
@@ -45,9 +54,9 @@ header h1{
     justify-content: flex-end;
 }
 
-.menu button{
+.menu button {
     background-color: transparent;
-    border: #1D1D25 1px solid;
+    border: var(--color5) 1px solid;
     border-radius: 10px;
     font-size: 1rem;
     padding: 25px;
@@ -56,8 +65,8 @@ header h1{
     margin-left: 50px;
 }
 
-.menu button:hover{
-    background-color: #12121A;
+.menu button:hover {
+    background-color: var(--color6);
 }
 
 .menu-container {
@@ -65,7 +74,7 @@ header h1{
     display: inline-block;
 }
     
-.menu-container button{
+.menu-container button {
     cursor: pointer;
 }
         
@@ -73,8 +82,8 @@ header h1{
     text-align: center;
     display: none;
     position: absolute;
-    background-color: #0C0C12;
-    border: #1D1D25 2px solid;
+    background-color: var(--color4);
+    border: var(--color5) 2px solid;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -82,6 +91,7 @@ header h1{
     top: 100%;
     left: 0;
 }
+
 .submenu a {
     padding: 12px 16px;
     text-decoration: none;
@@ -89,44 +99,45 @@ header h1{
 }
         
 .submenu a:hover {
-    background-color: #12121A;
+    background-color: var(--color6);
 }
         
 .menu-container:hover .submenu {
     display: block;
 }
 
-.body{
+.body {
     margin-top: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    width: 60dvw;
+    width: 80dvw;
+    padding-bottom: 50px;
 }
 
-.body p{
+.body p {
     font-size: 1.5rem;
     margin-top: 50px;
 }
 
-.buttons{
+.buttons {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     width: 60dvw;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
-.buttons a{
-    background-color: #12121A;
-    border: #1D1D25 1px solid;
+.buttons a {
+    background-color: var(--color6);
+    border: var(--color5) 2px solid;
     border-radius: 10px;
-    font-size: 1rem;
-    width: 10dvw;
-    height: 50px;
+    font-size: 1.5rem;
+    width: 20dvw;
+    height: 100px;
     padding: 25px;
     text-decoration: none;
     align-items: center;
@@ -134,6 +145,6 @@ header h1{
     display: flex;
 }
 
-.buttons a:hover{
+.buttons a:hover {
     background-color: transparent;
 }
