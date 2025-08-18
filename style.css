@@ -21,22 +21,13 @@ body{
 
 header{
     background-color: #0C0C12;
-    height: 100px;
-    width: 100dvw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    border-bottom: #1D1D25 2px solid;
-}
-
-.title{
-    height: 40px;
+    height: 75px;
     width: 100dvw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    border-bottom: #1D1D25 2px solid;
 }
 
 header h1{
@@ -44,47 +35,21 @@ header h1{
     font-size: 1.25rem;
 }
 
-.search{
-    background-color: #0C0C12;
-    height: 40px;
-    width: 300px;
-    border: #1D1D25 2px solid;
-    border-radius: 10px;
-    margin: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.search input{
-    background-color: transparent;
-    border: none;
-    height: 40px;
-    width: 300px;
-    margin: 10px;
-}
-
-.search input:focus{
-    border: none;
-    outline: none;
-}
-
 .menu{
-    background-color: #0C0C12;
-    height: 40px;
-    width: 100dvw;
+    margin: 50px;
+    height: 75px;
+    width: 50dvw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 .menu button{
     background-color: transparent;
     border: #1D1D25 1px solid;
     border-radius: 10px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 25px;
     padding-bottom: 7.5px;
     padding-top: 7.5px;
@@ -93,4 +58,40 @@ header h1{
 
 .menu button:hover{
     background-color: #12121A;
+}
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+    
+.menu-container button{
+    cursor: pointer;
+}
+        
+.submenu {
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: #0C0C12;
+    border: #1D1D25 2px solid;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    top: 100%;
+    left: 0;
+}
+.submenu a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+        
+.submenu a:hover {
+    background-color: #12121A;
+}
+        
+.menu-container:hover .submenu {
+    display: block;
 }
